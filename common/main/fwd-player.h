@@ -26,13 +26,13 @@ COPYRIGHT 1993-1999 PARALLAX SOFTWARE CORPORATION.  ALL RIGHTS RESERVED.
 #define MULTI_PNUM_UNDEF 0xcc
 
 // Initial player stat values
-#define INITIAL_ENERGY  i2f(100)    // 100% energy to start
-#define INITIAL_SHIELDS i2f(100)    // 100% shields to start
+#define INITIAL_ENERGY  i2f(200)    // 100% energy to start
+#define INITIAL_SHIELDS i2f(200)    // 100% shields to start
 
-#define MAX_ENERGY      i2f(200)    // go up to 200
-#define MAX_SHIELDS     i2f(200)
+#define MAX_ENERGY      i2f(900)    // go up to 200
+#define MAX_SHIELDS     i2f(900)
 
-#define INITIAL_LIVES               3   // start off with 3 lives
+#define INITIAL_LIVES               99   // start off with 3 lives
 
 // Values for special flags
 #if defined(DXX_BUILD_DESCENT_II)
@@ -43,8 +43,8 @@ COPYRIGHT 1993-1999 PARALLAX SOFTWARE CORPORATION.  ALL RIGHTS RESERVED.
 #define CALLSIGN_LEN                8       // so can use as filename (was: 12)
 
 // Amount of time player is cloaked.
-#define CLOAK_TIME_MAX          (F1_0*30)
-#define INVULNERABLE_TIME_MAX   (F1_0*30)
+#define CLOAK_TIME_MAX          (F1_0*90)
+#define INVULNERABLE_TIME_MAX   (F1_0*90)
 
 #if defined(DXX_BUILD_DESCENT_I)
 #define PLAYER_STRUCT_VERSION 	16		//increment this every time player struct changes

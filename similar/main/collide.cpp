@@ -2125,6 +2125,7 @@ void apply_damage_to_player(object &playerobj, const icobjptridx_t killer, fix d
 			assert(playerobj.flags & OF_SHOULD_BE_DEAD);
 			return;
 		}
+        damage = damage >> 1; // could also fixmul(damage, f0_5); but this should work instead.
 		const auto shields = (playerobj.shields -= damage);
 
 		if (shields < 0)
