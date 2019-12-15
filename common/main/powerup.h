@@ -102,7 +102,7 @@ constexpr std::integral_constant<unsigned, 16> POWERUP_NAME_LENGTH{};
 
 namespace dsx {
 #if defined(DXX_BUILD_DESCENT_I)
-#define VULCAN_AMMO_MAX             (392u*2)
+#define VULCAN_AMMO_MAX             (10000u*2)
 constexpr std::integral_constant<unsigned, 29> MAX_POWERUP_TYPES{};
 #elif defined(DXX_BUILD_DESCENT_II)
 #define VULCAN_AMMO_MAX             (392u*4)

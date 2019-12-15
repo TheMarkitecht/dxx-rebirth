@@ -29,10 +29,10 @@ COPYRIGHT 1993-1999 PARALLAX SOFTWARE CORPORATION.  ALL RIGHTS RESERVED.
 #define INITIAL_ENERGY  i2f(200)    // 100% energy to start
 #define INITIAL_SHIELDS i2f(200)    // 100% shields to start
 
-#define MAX_ENERGY      i2f(900)    // go up to 200
-#define MAX_SHIELDS     i2f(900)
+#define MAX_ENERGY      i2f(999)    // go up to 200
+#define MAX_SHIELDS     i2f(999)
 
-#define INITIAL_LIVES               99   // start off with 3 lives
+#define INITIAL_LIVES               999   // start off with 3 lives
 
 // Values for special flags
 #if defined(DXX_BUILD_DESCENT_II)

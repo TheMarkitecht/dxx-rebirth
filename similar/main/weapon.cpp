@@ -94,9 +94,9 @@ const array<ubyte, MAX_SECONDARY_WEAPONS> Secondary_weapon_to_gun_num{{4,4,7,7,7
 #endif
 
 namespace dsx {
-const array<uint8_t, MAX_SECONDARY_WEAPONS> Secondary_ammo_max{{20, 10, 10, 5, 5,
+const array<uint8_t, MAX_SECONDARY_WEAPONS> Secondary_ammo_max{{255, 255, 255, 255, 255
 #if defined(DXX_BUILD_DESCENT_II)
-	20, 20, 15, 10, 10
+	, 255, 255, 255, 255, 255
 #endif
 }};
 
