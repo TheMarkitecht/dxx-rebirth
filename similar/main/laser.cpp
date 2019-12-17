@@ -785,6 +785,8 @@ imobjptridx_t Laser_create_new(const vms_vector &direction, const vms_vector &po
 				obj->ctype.laser_info.multiplier = F1_0 + Fusion_charge/2;
 			else
 				obj->ctype.laser_info.multiplier = F1_0*fusion_scale;
+//fusion
+            obj->ctype.laser_info.multiplier *= 2;
 
 #if defined(DXX_BUILD_DESCENT_I)
 			//	Fusion damage was boosted by mk on 3/27 (for reg 1.1 release), but we only want it to apply to single player games.

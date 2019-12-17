@@ -1881,8 +1881,8 @@ window_event_result GameProcessFrame()
 				auto &rotvel = console->mtype.phys_info.rotvel;
 				rotvel.x += rx;
 				rotvel.z += rz;
-
-				const auto bump_amount = player_info.Fusion_charge > F1_0*2 ? player_info.Fusion_charge * 4 : F1_0 * 4;
+//fusion
+				const auto bump_amount = player_info.Fusion_charge > F1_0*2 ? F0_5 : 0;
 				bump_one_object(console, make_random_vector(), bump_amount);
 			}
 		}
@@ -2064,7 +2064,6 @@ void enable_flicker(d_flickering_light_state &fls, const vmsegidx_t segnum, cons
 bool FireLaser(player_info &player_info)
 {
 	auto &Objects = LevelUniqueObjectState.Objects;
-	auto &vmobjptr = Objects.vmptr;
 	auto &vmobjptridx = Objects.vmptridx;
 	if (!Controls.state.fire_primary)
 		return false;
@@ -2119,9 +2118,12 @@ bool FireLaser(player_info &player_info)
 						multi_send_play_sound(11, F1_0, sound_stack::allow_stacking);
 #endif
 					const auto cobjp = vmobjptridx(ConsoleObject);
-					apply_damage_to_player(cobjp, cobjp, d_rand() * 4, 0);
+//fusion
+					apply_damage_to_player(cobjp, cobjp, f0_5, 0);
 				} else {
-					create_awareness_event(vmobjptr(ConsoleObject), player_awareness_type_t::PA_WEAPON_ROBOT_COLLISION, LevelUniqueRobotAwarenessState);
+//fusion
+//	auto &vmobjptr = Objects.vmptr;
+//					create_awareness_event(vmobjptr(ConsoleObject), player_awareness_type_t::PA_WEAPON_ROBOT_COLLISION, LevelUniqueRobotAwarenessState);
 					multi_digi_play_sample(SOUND_FUSION_WARMUP, F1_0);
 				}
 				Fusion_next_sound_time = GameTime64 + F1_0/8 + d_rand()/4;
