@@ -950,7 +950,7 @@ imobjptridx_t Laser_create_new(const vms_vector &direction, const vms_vector &po
 	}
 
 	if (obj->type == OBJ_WEAPON && weapon_type == weapon_id_type::FLARE_ID)
-		obj->lifeleft += (d_rand()-16384) << 2;		//	add in -2..2 seconds
+		obj->lifeleft += d_rand() << 4;	
 
 	return obj;
 }
