@@ -1758,6 +1758,13 @@ static void collide_robot_and_weapon(const vmobjptridx_t  robot, const vmobjptri
 
 				damage = fixmul(damage, weapon->ctype.laser_info.multiplier);
 
+//mega
+//            printf("collide_robot_and_weapon  id=%08x  d=%08x\n", get_weapon_id(weapon), damage);
+			/* collide_robot_and_weapon  id=00000012  d=00c70000 */
+/*            if (get_weapon_id(weapon) == weapon_id_type::MEGA_ID) {
+                damage = damage * 2;
+            }
+*/
 #if defined(DXX_BUILD_DESCENT_II)
 			//	Cut Gauss damage on bosses because it just breaks the game.  Bosses are so easy to
 			//	hit, and missing a robot is what prevents the Gauss from being game-breaking.

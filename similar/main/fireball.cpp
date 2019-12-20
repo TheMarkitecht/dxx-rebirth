@@ -362,11 +362,21 @@ void explode_badass_weapon(const vmobjptridx_t obj,const vms_vector &pos)
 	digi_link_sound_to_object(SOUND_BADASS_EXPLOSION, obj, 0, F1_0, sound_stack::allow_stacking);
 
 	const auto Difficulty_level = GameUniqueState.Difficulty_level;
+//mega
+    auto str = wi->strength[Difficulty_level];
+    auto rad = wi->damage_radius;
+//    printf("explode_badass_weapon id=%08x strength=%08x rad=%08x\n", weapon_id, str, rad);
+    if (weapon_id == weapon_id_type::MEGA_ID) {
+        str *= 2;
+        rad *= 2;
+//        printf("mega! strength=%08x rad=%08x\n", str, rad);
+    }
 	object_create_badass_explosion(obj, vmsegptridx(obj->segnum), pos,
 	                                      wi->impact_size,
 	                                      wi->robot_hit_vclip,
-	                                      wi->strength[Difficulty_level],
-	                                      wi->damage_radius,wi->strength[Difficulty_level],
+	                                      str,
+	                                      rad,
+                                          str,
 	                                      imobjptridx(obj->ctype.laser_info.parent_num));
 
 }
