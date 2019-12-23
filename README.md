@@ -1,3 +1,45 @@
+# Ultra-Violence Mod
+
+For all the Descent players out there:  This repository contains a source code fork of DXX-Rebirth with TheMarkitecht's Ultra-Violence modification.
+
+This mod adjusts game balance to make the player's ship much tougher and more powerful.  The effect is to enable an average player to play aggressively, even on the higher skill settings.  Then he can see all the mines, in all their glory, the way their designers intended, minus the many, many player deaths, and flying all the way down to collect your stuff again, and the tedious repeated peek-a-boo's required to kill the many, many tough robots.  The original design becomes even more tedious when the extreme difficulty of the mines forces you to play on "Rookie" skill, because then you have to wait so long for the robot's shots to clear out of your way.  The game flows better and is much more exciting on the higher skill settings, and this mod makes those accessible to more players.
+
+List of changes:
+
+* Player shields are **much tougher** - all damage is only 20% of stock!
+* Raised initial shields and energy to 200.  That is also the level you can recharge to in the orange "fuel center" areas.
+* Raised max shields and energy to 999.  But you are unlikely to ever see that level without cheating.  That would take a LOT of shield orbs!
+* Raised initial life count to 99, so nobody's game ends before they're ready to quit.
+* Raised cloak and invulnerability duration to 90 sec.
+* Fusion cannon is worth using!
+    * Fusion cannon does twice as much damage.
+    * Fusion cannon charging up bumps the player around less - only 12% of stock.  So it's easier to aim now.
+    * Fusion cannon overcharging damages the player less - about 25% of stock.
+    * Fusion cannon charging no longer alerts robots while player is cloaked.  This makes it one of the best weapons to use while cloaked.
+* Mega Missile does double damage and double blast radius now.
+    * Note: The minimum safe distance from the detonation is about 4 seconds worth of straight-line flight of the player's ship.
+    * Note: Blast is powerful enough to destroy a fresh red hulk nearby, or every scout anywhere in a medium sized room.  Often it will not, however, destroy the reactor with one shot in the later mines.
+* Increased max ammo storage for all types of missiles to 255.  These are carried into the next mine, but as usual only the first 10 to 20 are ejected by a dying player ship.  The rest are lost.
+* Increased max ammo storage for vulcan.  The max is at least 100,000 rounds; I'm not sure exactly.  Note that the ammo display rolls over at 65,536, starting again at zero, but none are lost; all are still usable then.  All are carried into the next mine, but as usual only the first few are ejected by a dying player ship.  The rest are lost.
+* Flares last longer.
+
+I know what you're thinking:  "With all that help, it's gonna be a cakewalk.  Boring."  NOPE!  Guess again.  You still have to stay on your toes or they'll lay the smack down!  The mines are just that brutal!
+
+This mod is focused on Descent and its original mission.  I have not tested it in Descent 2 at all.  It's probably playable in D2.  It does at least build D2 from the source code if you want to try it.  The same disclaimer too for multiplayer.  This is only tested in single player.
+
+Speaking of testing, I have played this mod for several days with no crashes or other unusual problems.
+
+Have fun, and remember:  Be aggressive;  BE-E AGGRESSIVE!  :-)
+
+\- TheMarkitecht
+
+
+
+---
+Below is the README from the upstream repository: https://github.com/dxx-rebirth/dxx-rebirth
+---
+
+
 ```
                          __________
 __________/ DXX-Rebirth /
